@@ -91,6 +91,10 @@ ul a {
     text-decoration: none;
 }
 
+ul a:hover {
+    color: rgb(255,215,0);
+}
+
 .lang {
     width: 130px;
     padding-top: 5px;
