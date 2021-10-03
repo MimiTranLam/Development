@@ -19,6 +19,8 @@ a:hover {
 button {
     background-color: transparent;
     border: none;
+    /* margin: 0;
+    padding: 0; */
 }
 
 /* nav */
@@ -27,7 +29,7 @@ nav {
     padding: 0;
     max-width: 100vw;
     top: 0px;
-    position: sticky;
+    position: fixed;
     z-index: 100;
 }
 
@@ -50,16 +52,18 @@ nav {
     align-items: center;
 }
 
-button .logo-name {
+/* nav logo button */
+.logo-name {
     margin: 0;
     padding: 0;
     text-transform: uppercase;
     text-align: center;
     line-height: inherit;
+    /* width: 100px;
+    height: auto; */
 }
 
-/* nav logo , h1*/
-button #logo:before {
+#logo:before {
     padding-right: 10px;
     background-color: rgb(238,237,174);
     background: radial-gradient(circle, rgba(238,237,174,0.5) 0%, rgba(255,215,0,1) 100%);
@@ -117,3 +121,47 @@ ul a:hover {
     z-index: -2;
     background-color: lightcoral;
 }
+
+/* logo edit */
+.edit {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* 
+.edit .logo.edit {
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(255,215,0);
+    background-color: rgb(238,237,174);
+    background: radial-gradient(circle, rgba(238,237,174,0.5) 0%, rgba(255,215,0,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: 1000%;
+} */
+
+#logo-edit:before {
+    -webkit-text-stroke-width: 10px;
+    -webkit-text-stroke-color: rgb(255,215,0);
+    background-color: rgb(238,237,174);
+    background: radial-gradient(circle, rgba(238,237,174,0.5) 0%, rgba(255,215,0,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: 1000%;
+}
+
+
+/* #logo-edit:before {
+    background-color: rgb(238,237,174);
+    background: radial-gradient(circle, rgba(238,237,174,0.5) 0%, rgba(255,215,0,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-size: 1000%;
+    border: 2px solid rgb(255,215,0);
+    padding: -1px 5px 0;
+    border-top-left-radius: 130%;
+    border-top-right-radius: 130%;
+    border-bottom-left-radius: 100%;
+    border-bottom-right-radius: 100%;
+} */
